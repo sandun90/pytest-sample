@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 14-Jul-2024 at 18:25:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">14 tests took 994 ms.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">13 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.4&#34;, &#34;Platform&#34;: &#34;macOS-14.5-arm64-arm-64bit&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.2.2&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;cov&#34;: &#34;5.0.0&#34;, &#34;playwright&#34;: &#34;0.5.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;xdist&#34;: &#34;3.6.1&#34;}, &#34;JAVA_HOME&#34;: &#34;/Library/Java/JavaVirtualMachines/jdk1.8.0_361.jdk/Contents/Home&#34;, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;tests/test_accum.py::test_accumulator_init&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_accum.py::test_accumulator_init&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_accum.py::test_accumulator_init&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_accum.py::test_accumulator_add_one&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_accum.py::test_accumulator_add_one&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_accum.py::test_accumulator_add_one&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_accum.py::test_accumulator_add_three&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_accum.py::test_accumulator_add_three&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_accum.py::test_accumulator_add_three&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_accum.py::test_accumulator_add_twice&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_accum.py::test_accumulator_add_twice&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_accum.py::test_accumulator_add_twice&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_accum.py::test_accumulator_cannot_set_count_directly&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_accum.py::test_accumulator_cannot_set_count_directly&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_accum.py::test_accumulator_cannot_set_count_directly&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_api_sample.py::test_duckduckgo_instant_answer_api&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_sample.py::test_duckduckgo_instant_answer_api&#34;, &#34;duration&#34;: &#34;107 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_sample.py::test_duckduckgo_instant_answer_api&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;107 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n{&amp;#x27;Abstract&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;AbstractSource&amp;#x27;: &amp;#x27;Wikipedia&amp;#x27;, &amp;#x27;AbstractText&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;AbstractURL&amp;#x27;: &amp;#x27;https://en.wikipedia.org/wiki/Python_(programming_language)&amp;#x27;, &amp;#x27;Answer&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;AnswerType&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Definition&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;DefinitionSource&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;DefinitionURL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Entity&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Heading&amp;#x27;: &amp;#x27;Python (programming language)&amp;#x27;, &amp;#x27;Image&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;ImageHeight&amp;#x27;: 0, &amp;#x27;ImageIsLogo&amp;#x27;: 0, &amp;#x27;ImageWidth&amp;#x27;: 0, &amp;#x27;Infobox&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Redirect&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;RelatedTopics&amp;#x27;: [{&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/ActivePython&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/www.activestate.com.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/ActivePython&amp;quot;&amp;gt;ActivePython&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;ActiveState is a Canadian software company headquartered in Vancouver, British Columbia. It develops, sells, and supports cross-platform development tools for dynamic languages such as Perl, PHP, Python, Ruby, and Tcl, as well as language distributions and enterprise services.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;ActivePython - ActiveState is a Canadian software company headquartered in Vancouver, British Columbia. It develops, sells, and supports cross-platform development tools for dynamic languages such as Perl, PHP, Python, Ruby, and Tcl, as well as language distributions and enterprise services.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Alex_Martelli&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/9bc690d9.jpg&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Alex_Martelli&amp;quot;&amp;gt;Alex Martelli&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Alex Martelli is an Italian computer engineer and Fellow of the Python Software Foundation.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Alex Martelli - Alex Martelli is an Italian computer engineer and Fellow of the Python Software Foundation.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Allison_Randal&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/cfdb6e3a.jpg&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Allison_Randal&amp;quot;&amp;gt;Allison Randal&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Allison Randal is a software developer and author. She was the chief architect of the Parrot virtual machine, a member of the board of directors for The Perl Foundation, a Director of the Python Software Foundation from 2010 to 2012, and the Chairman of the Parrot Foundation.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Allison Randal - Allison Randal is a software developer and author. She was the chief architect of the Parrot virtual machine, a member of the board of directors for The Perl Foundation, a Director of the Python Software Foundation from 2010 to 2012, and the Chairman of the Parrot Foundation.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Alyvix&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Alyvix&amp;quot;&amp;gt;Alyvix&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Alyvix is an open source software application developed in Python for System monitoring and IT monitoring, synthetic monitoring and application performance management on Windows computers.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Alyvix - Alyvix is an open source software application developed in Python for System monitoring and IT monitoring, synthetic monitoring and application performance management on Windows computers.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Armin_Ronacher&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Armin_Ronacher&amp;quot;&amp;gt;Armin Ronacher&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Armin Ronacher is an Austrian open source software programmer and the creator of the Flask web framework for Python.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Armin Ronacher - Armin Ronacher is an Austrian open source software programmer and the creator of the Flask web framework for Python.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Asynchronous_Server_Gateway_Interface&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Asynchronous_Server_Gateway_Interface&amp;quot;&amp;gt;Asynchronous Server Gateway Interface&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Asynchronous Server Gateway Interface is a calling convention for web servers to forward requests to asynchronous-capable Python programming language frameworks, and applications. It is built as a successor to the Web Server Gateway Interface.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Asynchronous Server Gateway Interface - The Asynchronous Server Gateway Interface is a calling convention for web servers to forward requests to asynchronous-capable Python programming language frameworks, and applications. It is built as a successor to the Web Server Gateway Interface.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/CircuitPython&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/CircuitPython&amp;quot;&amp;gt;CircuitPython&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;CircuitPython is an open-source derivative of the MicroPython programming language targeted toward students and beginners. Development of CircuitPython is supported by Adafruit Industries.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;CircuitPython - CircuitPython is an open-source derivative of the MicroPython programming language targeted toward students and beginners. Development of CircuitPython is supported by Adafruit Industries.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/CodeSkulptor&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/CodeSkulptor&amp;quot;&amp;gt;CodeSkulptor&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;CodeSkulptor is an interactive, web-based Python programming environment that allows Python code to be run in a web browser. The application was developed by Scott Rixner, a professor of computer science at Rice University.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;CodeSkulptor - CodeSkulptor is an interactive, web-based Python programming environment that allows Python code to be run in a web browser. The application was developed by Scott Rixner, a professor of computer science at Rice University.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Core_Python_Programming&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/192adacb.gif&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Core_Python_Programming&amp;quot;&amp;gt;Core Python Programming&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Core Python Programming is a textbook on the Python programming language, written by Wesley J. Chun. The first edition of the book was released on December 14, 2000. The second edition was released several years later on September 18, 2006.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Core Python Programming - Core Python Programming is a textbook on the Python programming language, written by Wesley J. Chun. The first edition of the book was released on December 14, 2000. The second edition was released several years later on September 18, 2006.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Cython&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/a10250b9.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Cython&amp;quot;&amp;gt;Cython&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Cython is a superset of the programming language Python, which allows developers to write Python code that yields performance comparable to that of C. Cython is a compiled language that is typically used to generate CPython extension modules.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Cython - Cython is a superset of the programming language Python, which allows developers to write Python code that yields performance comparable to that of C. Cython is a compiled language that is typically used to generate CPython extension modules.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/David_M._Beazley&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/David_M._Beazley&amp;quot;&amp;gt;David M. Beazley&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;David Beazley is an American software engineer.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;David M. Beazley - David Beazley is an American software engineer.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Django_Girls&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Django_Girls&amp;quot;&amp;gt;Django Girls&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Django Girls is an international non-profit organization started by two Polish women, Ola Sitarska and Ola Sendecka, to inspire women from all backgrounds to get interested in technology and to become programmers, offering a safe and friendly environment.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Django Girls - Django Girls is an international non-profit organization started by two Polish women, Ola Sitarska and Ola Sendecka, to inspire women from all backgrounds to get interested in technology and to become programmers, offering a safe and friendly environment.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Docstring&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Docstring&amp;quot;&amp;gt;Docstring&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;In programming, a docstring is a string literal specified in source code that is used, like a comment, to document a specific segment of code.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Docstring - In programming, a docstring is a string literal specified in source code that is used, like a comment, to document a specific segment of code.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Fernando_P%C3%A9rez_(software_developer)&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Fernando_P%C3%A9rez_(software_developer)&amp;quot;&amp;gt;Fernando P\u00e9rez (software developer)&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Fernando P\u00e9rez is a Colombian-American physicist, software developer, and free software advocate.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Fernando P\u00e9rez (software developer) - Fernando P\u00e9rez is a Colombian-American physicist, software developer, and free software advocate.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Global_interpreter_lock&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Global_interpreter_lock&amp;quot;&amp;gt;Global interpreter lock&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;A global interpreter lock is a mechanism used in computer-language interpreters to synchronize the execution of threads so that only one native thread can execute basic operations at a time.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Global interpreter lock - A global interpreter lock is a mechanism used in computer-language interpreters to synchronize the execution of threads so that only one native thread can execute basic operations at a time.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Greg_Stein&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/7a4237f4.jpg&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Greg_Stein&amp;quot;&amp;gt;Greg Stein&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Greg Stein, living in Austin, Texas, United States, is a programmer, speaker, sometime standards architect, and open-source software advocate, appearing frequently at conferences and in interviews on the topic of open-source software development and use.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Greg Stein - Greg Stein, living in Austin, Texas, United States, is a programmer, speaker, sometime standards architect, and open-source software advocate, appearing frequently at conferences and in interviews on the topic of open-source software development and use.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Guido_van_Robot&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/ec0788b6.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Guido_van_Robot&amp;quot;&amp;gt;Guido van Robot&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Guido van Robot is an educational tool to help students learn the Python programming language, named after the creator of Python, Guido van Rossum. GvR uses the idea behind Karel the Robot, making the learning of Python programming more interesting.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Guido van Robot - Guido van Robot is an educational tool to help students learn the Python programming language, named after the creator of Python, Guido van Rossum. GvR uses the idea behind Karel the Robot, making the learning of Python programming more interesting.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Guido_van_Rossum&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/418138bc.jpg&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Guido_van_Rossum&amp;quot;&amp;gt;Guido van Rossum&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Guido van Rossum is a Dutch programmer best known as the creator of the Python programming language, for which he was the &amp;quot;benevolent dictator for life&amp;quot; until he stepped down from the position on 12 July 2018.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Guido van Rossum - Guido van Rossum is a Dutch programmer best known as the creator of the Python programming language, for which he was the &amp;quot;benevolent dictator for life&amp;quot; until he stepped down from the position on 12 July 2018.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/History_of_Python&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/4b1bf2e0.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/History_of_Python&amp;quot;&amp;gt;History of Python&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The programming language Python was conceived in the late 1980s, and its implementation was started in December 1989 by Guido van Rossum at CWI in the Netherlands as a successor to ABC capable of exception handling and interfacing with the Amoeba operating system.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;History of Python - The programming language Python was conceived in the late 1980s, and its implementation was started in December 1989 by Guido van Rossum at CWI in the Netherlands as a successor to ABC capable of exception handling and interfacing with the Amoeba operating system.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Learning_Python&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Learning_Python&amp;quot;&amp;gt;Learning Python&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Learning Python is a tutorial book for the Python programming language, and is published by O\\&amp;#x27;Reilly Media. The first and second editions were written by Mark Lutz and David Ascher, and covers Python 1.5 and 2.3, respectively. The third edition was written solely by Mark Lutz, and covers Python 2.5.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;quot;Learning Python - Learning Python is a tutorial book for the Python programming language, and is published by O&amp;#x27;Reilly Media. The first and second editions were written by Mark Lutz and David Ascher, and covers Python 1.5 and 2.3, respectively. The third edition was written solely by Mark Lutz, and covers Python 2.5.&amp;quot;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Mod_python&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Mod_python&amp;quot;&amp;gt;Mod python&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Mod_python is an Apache HTTP Server module that integrates the Python programming language with the server. It is intended to provide a Python language binding for the Apache HTTP Server.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Mod python - Mod_python is an Apache HTTP Server module that integrates the Python programming language with the server. It is intended to provide a Python language binding for the Apache HTTP Server.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Mojo_(programming_language)&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Mojo_(programming_language)&amp;quot;&amp;gt;Mojo (programming language)&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Mojo is a programming language in the Python family that is currently under development.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Mojo (programming language) - Mojo is a programming language in the Python family that is currently under development.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Numba&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/numba.pydata.org.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Numba&amp;quot;&amp;gt;Numba&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Numba is an open-source JIT compiler that translates a subset of Python and NumPy into fast machine code using LLVM, via the llvmlite Python package. It offers a range of options for parallelising Python code for CPUs and GPUs, often with only minor code changes.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Numba - Numba is an open-source JIT compiler that translates a subset of Python and NumPy into fast machine code using LLVM, via the llvmlite Python package. It offers a range of options for parallelising Python code for CPUs and GPUs, often with only minor code changes.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/PyDev&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/4f5d7405.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/PyDev&amp;quot;&amp;gt;PyDev&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;PyDev is a third-party plug-in for Eclipse. It is an Integrated Development Environment used for programming in Python supporting code refactoring, graphical debugging, code analysis among other features.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;PyDev - PyDev is a third-party plug-in for Eclipse. It is an Integrated Development Environment used for programming in Python supporting code refactoring, graphical debugging, code analysis among other features.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Pyflag&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Pyflag&amp;quot;&amp;gt;Pyflag&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Pyflag is a forensic software tool written in the Python programming language.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Pyflag - Pyflag is a forensic software tool written in the Python programming language.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/PyLadies&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/www.pyladies.com.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/PyLadies&amp;quot;&amp;gt;PyLadies&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;PyLadies is an international mentorship group which focuses on helping more women become active participants in the Python open-source community. It is part of the Python Software Foundation. It was started in Los Angeles in 2011.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;PyLadies - PyLadies is an international mentorship group which focuses on helping more women become active participants in the Python open-source community. It is part of the Python Software Foundation. It was started in Los Angeles in 2011.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Pyrex_(programming_language)&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/www.cosc.canterbury.ac.nz.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Pyrex_(programming_language)&amp;quot;&amp;gt;Pyrex (programming language)&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Pyrex is a programming language for creating Python modules. Its syntax is very close to Python and it makes it easy for Python programmers to write non-Python supporting code for interfacing modules in a language which is as close to Python as possible.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Pyrex (programming language) - Pyrex is a programming language for creating Python modules. Its syntax is very close to Python and it makes it easy for Python programmers to write non-Python supporting code for interfacing modules in a language which is as close to Python as possible.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/PythonAnywhere&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/6c43cd88.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/PythonAnywhere&amp;quot;&amp;gt;PythonAnywhere&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;PythonAnywhere is an online integrated development environment and web hosting service based on the Python programming language.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;PythonAnywhere - PythonAnywhere is an online integrated development environment and web hosting service based on the Python programming language.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_Conference&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/pycon.blogspot.com.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_Conference&amp;quot;&amp;gt;Python Conference&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Python Conference is the largest annual convention for the discussion and promotion of the Python programming language. It originated in the United States but is also held in more than 40 other countries.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python Conference - The Python Conference is the largest annual convention for the discussion and promotion of the Python programming language. It originated in the United States but is also held in more than 40 other countries.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_for_S60&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/7eec482b.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_for_S60&amp;quot;&amp;gt;Python for S60&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Python for S60, also called PyS60\u2014a term reminiscent of the Unix naming convention\u2014 is a port of the Python programming language developed by Nokia for its S60 software platform, originally based on Python 2.2.2 from 2002.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python for S60 - Python for S60, also called PyS60\u2014a term reminiscent of the Unix naming convention\u2014 is a port of the Python programming language developed by Nokia for its S60 software platform, originally based on Python 2.2.2 from 2002.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_License&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_License&amp;quot;&amp;gt;Python License&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Python License is a deprecated permissive computer software license created by the Corporation for National Research Initiatives. It was used for versions 1.6 and 2.0 of the Python programming language, both released in the year 2000.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python License - The Python License is a deprecated permissive computer software license created by the Corporation for National Research Initiatives. It was used for versions 1.6 and 2.0 of the Python programming language, both released in the year 2000.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_Package_Index&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_Package_Index&amp;quot;&amp;gt;Python Package Index&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Python Package Index, abbreviated as PyPI and also known as the Cheese Shop, is the official third-party software repository for Python. It is analogous to the CPAN repository for Perl and to the CRAN repository for R. PyPI is run by the Python Software Foundation, a charity.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python Package Index - The Python Package Index, abbreviated as PyPI and also known as the Cheese Shop, is the official third-party software repository for Python. It is analogous to the CPAN repository for Perl and to the CRAN repository for R. PyPI is run by the Python Software Foundation, a charity.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_Server_Pages&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_Server_Pages&amp;quot;&amp;gt;Python Server Pages&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Python Server Pages is a name used by several different implementations of server-side script engines for creating dynamically-generated web pages by embedding Python in HTML. For example, an implementation of Python Server Pages was released with mod python 3.1 in 2004.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python Server Pages - Python Server Pages is a name used by several different implementations of server-side script engines for creating dynamically-generated web pages by embedding Python in HTML. For example, an implementation of Python Server Pages was released with mod python 3.1 in 2004.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_Software_Foundation&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/7eec482b.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_Software_Foundation&amp;quot;&amp;gt;Python Software Foundation&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Python Software Foundation is an American nonprofit organization devoted to the Python programming language, launched on March 6, 2001.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python Software Foundation - The Python Software Foundation is an American nonprofit organization devoted to the Python programming language, launched on March 6, 2001.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_Software_Foundation_License&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_Software_Foundation_License&amp;quot;&amp;gt;Python Software Foundation License&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Python Software Foundation License is a BSD-style, permissive software license which is compatible with the GNU General Public License. Its primary use is for distribution of the Python project software and its documentation.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python Software Foundation License - The Python Software Foundation License is a BSD-style, permissive software license which is compatible with the GNU General Public License. Its primary use is for distribution of the Python project software and its documentation.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Python_syntax_and_semantics&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Python_syntax_and_semantics&amp;quot;&amp;gt;Python syntax and semantics&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The syntax of the Python programming language is the set of rules that defines how a Python program will be written and interpreted. The Python language has many similarities to Perl, C, and Java. However, there are some definite differences between the languages.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Python syntax and semantics - The syntax of the Python programming language is the set of rules that defines how a Python program will be written and interpreted. The Python language has many similarities to Perl, C, and Java. However, there are some definite differences between the languages.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/RUR-PLE&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/57528a70.png&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/RUR-PLE&amp;quot;&amp;gt;RUR-PLE&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;RUR - Python Learning Environment is an educational tool to help students learn the Python programming language. Made by Andr\u00e9 Roberge. RUR-PLE uses the idea behind Karel the Robot, making the learning of Python programming more interesting.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;RUR-PLE - RUR - Python Learning Environment is an educational tool to help students learn the Python programming language. Made by Andr\u00e9 Roberge. RUR-PLE uses the idea behind Karel the Robot, making the learning of Python programming more interesting.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Spyce&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/spyce.sourceforge.net.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Spyce&amp;quot;&amp;gt;Spyce&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Spyce is technology similar to PHP that can be used to embed Python code into webpages. Spyce is free software, distributed under a BSD-style licence, with some additional restrictions about documentation notices.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Spyce - Spyce is technology similar to PHP that can be used to embed Python code into webpages. Spyce is free software, distributed under a BSD-style licence, with some additional restrictions about documentation notices.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Spyce_(software)&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Spyce_(software)&amp;quot;&amp;gt;Spyce (software)&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Spyce is technology similar to PHP that can be used to embed Python code into webpages. Spyce is free software, distributed under a BSD-style licence, with some additional restrictions about documentation notices.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Spyce (software) - Spyce is technology similar to PHP that can be used to embed Python code into webpages. Spyce is free software, distributed under a BSD-style licence, with some additional restrictions about documentation notices.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Statsmodels&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: 16, &amp;#x27;URL&amp;#x27;: &amp;#x27;/i/statsmodels.sourceforge.net.ico&amp;#x27;, &amp;#x27;Width&amp;#x27;: 16}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Statsmodels&amp;quot;&amp;gt;Statsmodels&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Statsmodels is a Python package that allows users to explore data, estimate statistical models, and perform statistical tests. An extensive list of descriptive statistics, statistical tests, plotting functions, and result statistics are available for different types of data and each estimator.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Statsmodels - Statsmodels is a Python package that allows users to explore data, estimate statistical models, and perform statistical tests. An extensive list of descriptive statistics, statistical tests, plotting functions, and result statistics are available for different types of data and each estimator.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Taiwan_Python_Conference&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Taiwan_Python_Conference&amp;quot;&amp;gt;Taiwan Python Conference&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Taiwan Python Conference also known as Annual Taiwan Python Conference abbreviated PyCon TW has been held by Python communities in Taiwan since 2012 at Academia Sinica\\&amp;#x27;s human and social study research institute, aimed to discuss the improvement and versatile application of Python programming...&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;quot;Taiwan Python Conference - Taiwan Python Conference also known as Annual Taiwan Python Conference abbreviated PyCon TW has been held by Python communities in Taiwan since 2012 at Academia Sinica&amp;#x27;s human and social study research institute, aimed to discuss the improvement and versatile application of Python programming...&amp;quot;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Tim_Peters_(software_engineer)&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Tim_Peters_(software_engineer)&amp;quot;&amp;gt;Tim Peters (software engineer)&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;Tim Peters is an American software developer who is known for creating the Timsort hybrid sorting algorithm and for his major contributions to the Python programming language and its original CPython implementation.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Tim Peters (software engineer) - Tim Peters is an American software developer who is known for creating the Timsort hybrid sorting algorithm and for his major contributions to the Python programming language and its original CPython implementation.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Web_Server_Gateway_Interface&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Web_Server_Gateway_Interface&amp;quot;&amp;gt;Web Server Gateway Interface&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Web Server Gateway Interface is a simple calling convention for web servers to forward requests to web applications or frameworks written in the Python programming language. The current version of WSGI, version 1.0.1, is specified in Python Enhancement Proposal 3333.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Web Server Gateway Interface - The Web Server Gateway Interface is a simple calling convention for web servers to forward requests to web applications or frameworks written in the Python programming language. The current version of WSGI, version 1.0.1, is specified in Python Enhancement Proposal 3333.&amp;#x27;}, {&amp;#x27;FirstURL&amp;#x27;: &amp;#x27;https://duckduckgo.com/Zen_of_Python&amp;#x27;, &amp;#x27;Icon&amp;#x27;: {&amp;#x27;Height&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;URL&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;Width&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;Result&amp;#x27;: &amp;#x27;&amp;lt;a href=&amp;quot;https://duckduckgo.com/Zen_of_Python&amp;quot;&amp;gt;Zen of Python&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;The Zen of Python is a collection of 19 &amp;quot;guiding principles&amp;quot; for writing computer programs that influence the design of the Python programming language. Python code that aligns with these principles is often referred to as &amp;quot;Pythonic&amp;quot;.&amp;#x27;, &amp;#x27;Text&amp;#x27;: &amp;#x27;Zen of Python - The Zen of Python is a collection of 19 &amp;quot;guiding principles&amp;quot; for writing computer programs that influence the design of the Python programming language. Python code that aligns with these principles is often referred to as &amp;quot;Pythonic&amp;quot;.&amp;#x27;}], &amp;#x27;Results&amp;#x27;: [], &amp;#x27;Type&amp;#x27;: &amp;#x27;C&amp;#x27;, &amp;#x27;meta&amp;#x27;: {&amp;#x27;attribution&amp;#x27;: None, &amp;#x27;blockgroup&amp;#x27;: None, &amp;#x27;created_date&amp;#x27;: None, &amp;#x27;description&amp;#x27;: &amp;#x27;Wikipedia&amp;#x27;, &amp;#x27;designer&amp;#x27;: None, &amp;#x27;dev_date&amp;#x27;: None, &amp;#x27;dev_milestone&amp;#x27;: &amp;#x27;live&amp;#x27;, &amp;#x27;developer&amp;#x27;: [{&amp;#x27;name&amp;#x27;: &amp;#x27;DDG Team&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;ddg&amp;#x27;, &amp;#x27;url&amp;#x27;: &amp;#x27;http://www.duckduckhack.com&amp;#x27;}], &amp;#x27;example_query&amp;#x27;: &amp;#x27;nikola tesla&amp;#x27;, &amp;#x27;id&amp;#x27;: &amp;#x27;wikipedia_fathead&amp;#x27;, &amp;#x27;is_stackexchange&amp;#x27;: None, &amp;#x27;js_callback_name&amp;#x27;: &amp;#x27;wikipedia&amp;#x27;, &amp;#x27;live_date&amp;#x27;: None, &amp;#x27;maintainer&amp;#x27;: {&amp;#x27;github&amp;#x27;: &amp;#x27;duckduckgo&amp;#x27;}, &amp;#x27;name&amp;#x27;: &amp;#x27;Wikipedia&amp;#x27;, &amp;#x27;perl_module&amp;#x27;: &amp;#x27;DDG::Fathead::Wikipedia&amp;#x27;, &amp;#x27;producer&amp;#x27;: None, &amp;#x27;production_state&amp;#x27;: &amp;#x27;online&amp;#x27;, &amp;#x27;repo&amp;#x27;: &amp;#x27;fathead&amp;#x27;, &amp;#x27;signal_from&amp;#x27;: &amp;#x27;wikipedia_fathead&amp;#x27;, &amp;#x27;src_domain&amp;#x27;: &amp;#x27;en.wikipedia.org&amp;#x27;, &amp;#x27;src_id&amp;#x27;: 1, &amp;#x27;src_name&amp;#x27;: &amp;#x27;Wikipedia&amp;#x27;, &amp;#x27;src_options&amp;#x27;: {&amp;#x27;directory&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;is_fanon&amp;#x27;: 0, &amp;#x27;is_mediawiki&amp;#x27;: 1, &amp;#x27;is_wikipedia&amp;#x27;: 1, &amp;#x27;language&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;min_abstract_length&amp;#x27;: &amp;#x27;20&amp;#x27;, &amp;#x27;skip_abstract&amp;#x27;: 0, &amp;#x27;skip_abstract_paren&amp;#x27;: 0, &amp;#x27;skip_end&amp;#x27;: &amp;#x27;0&amp;#x27;, &amp;#x27;skip_icon&amp;#x27;: 0, &amp;#x27;skip_image_name&amp;#x27;: 0, &amp;#x27;skip_qr&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;source_skip&amp;#x27;: &amp;#x27;&amp;#x27;, &amp;#x27;src_info&amp;#x27;: &amp;#x27;&amp;#x27;}, &amp;#x27;src_url&amp;#x27;: None, &amp;#x27;status&amp;#x27;: &amp;#x27;live&amp;#x27;, &amp;#x27;tab&amp;#x27;: &amp;#x27;About&amp;#x27;, &amp;#x27;topic&amp;#x27;: [&amp;#x27;productivity&amp;#x27;], &amp;#x27;unsafe&amp;#x27;: 0}}\n&#34;}], &#34;tests/test_file_first.py::test_first_one&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_file_first.py::test_first_one&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_file_first.py::test_first_one&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_file_first.py::test_first_two&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_file_first.py::test_first_two&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_file_first.py::test_first_two&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;def test_first_two():\n&amp;gt;       assert 1+1==3;\nE       assert (1 + 1) == 3\n\ntests/test_file_first.py:7: AssertionError\n&#34;}], &#34;tests/test_file_first.py::test_devided_by_zero&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_file_first.py::test_devided_by_zero&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_file_first.py::test_devided_by_zero&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_math.py::test_multiplication[2-3-6]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_math.py::test_multiplication[2-3-6]&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_math.py::test_multiplication[2-3-6]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_math.py::test_multiplication[1-99-99]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_math.py::test_multiplication[1-99-99]&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_math.py::test_multiplication[1-99-99]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_math.py::test_multiplication[0-99-0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_math.py::test_multiplication[0-99-0]&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_math.py::test_multiplication[0-99-0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_math.py::test_multiplication[3--4--12]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_math.py::test_multiplication[3--4--12]&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_math.py::test_multiplication[3--4--12]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_ui_playwright.py::test_acme_bank_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_ui_playwright.py::test_acme_bank_login[chromium]&#34;, &#34;duration&#34;: &#34;884 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ui_playwright.py::test_acme_bank_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;884 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
